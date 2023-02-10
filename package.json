@@ -1,6 +1,6 @@
 {
   "name": "social-components-parser",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "`social-components` post content parser",
   "main": "index.js",
   "type": "module",
@@ -16,7 +16,8 @@
   },
   "sideEffects": false,
   "dependencies": {
-    "@xmldom/xmldom": "^0.8.2"
+    "@xmldom/xmldom": "^0.8.2",
+    "social-components": "^0.3.1"
   },
   "devDependencies": {
     "chai": "^4.3.6",
