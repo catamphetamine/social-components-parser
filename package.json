@@ -1,22 +1,17 @@
 {
   "name": "social-components-parser",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "`social-components` post content parser",
-  "main": "index.js",
   "type": "module",
   "exports": {
     ".": {
       "default": "./index.js"
     },
-    "./DOMParser": {
-      "node": "./DOMParser/node.js",
-      "default": "./DOMParser/browser.js"
-    },
     "./package.json": "./package.json"
   },
   "sideEffects": false,
   "dependencies": {
-    "@xmldom/xmldom": "^0.8.2",
+    "html-document-parser": "^1.1.1",
     "social-components": "^0.3.2"
   },
   "devDependencies": {
@@ -25,7 +20,6 @@
     "npm-run-all": "^1.4.0"
   },
   "scripts": {
-    "test-chan": "node --experimental-json-modules test/test.js",
     "test": "node --experimental-json-modules node_modules/mocha/bin/_mocha --require ./test/setup.js --reporter spec --colors --bail --exit --recursive --reporter-option maxDiffSize=0 \"./{,!(node_modules)/**/}*.test.js\"",
     "build": "echo \"no build script\"",
     "prepublishOnly": "npm run build && npm run test"
