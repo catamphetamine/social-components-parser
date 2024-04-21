@@ -1,6 +1,6 @@
 {
   "name": "social-components-parser",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "`social-components` post content parser",
   "type": "module",
   "exports": {
@@ -12,7 +12,7 @@
   "sideEffects": false,
   "dependencies": {
     "html-document-parser": "^1.1.1",
-    "social-components": "^0.4.0"
+    "social-components": "^0.4.1"
   },
   "devDependencies": {
     "chai": "^4.3.6",
